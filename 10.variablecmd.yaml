@@ -4,4 +4,4 @@
   tasks:
   - name: print variables from command line
     debug:
-      msg: "hi,iam learning {{course}} from {{trainer}} for {{duration}}"
+      msg: "My name is {{name}}"
