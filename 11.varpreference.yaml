@@ -5,10 +5,10 @@
     test: "From Play"
   #vars_files:
   #- course.yaml
-  vars_prompt:
-  - name: test
-    prompt: from prompt
-    private: no
+  #vars_prompt:
+  #- name: test
+   # prompt: from prompt
+    #private: no
   tasks:
   - name: print the variable
     #vars:
