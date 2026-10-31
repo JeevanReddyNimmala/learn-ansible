@@ -11,7 +11,7 @@
     private: no
   tasks:
   - name: print the variable
-    vars:
-      test: "From Task"
+    #vars:
+     # test: "From Task"
     debug:
       msg: "The value is from {{test}}"
