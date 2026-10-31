@@ -1,0 +1,16 @@
+- name: task level variables
+  hosts: local
+  connection: local
+  vars:
+    property: "200 acres"
+  tasks:
+  - name: "Task at vars level"
+    debug:
+     msg: "The property is {{property}} from father"
+
+  - name: task level varaiables check-1
+    vars:
+      property: "100 acres"
+    debug:
+      msg: "{{property}} is from his Mother"
+
