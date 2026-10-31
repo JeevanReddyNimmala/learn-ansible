@@ -1,8 +1,8 @@
 - name: var preference demo
   hosts: local
   connection: local
-  vars:
-    test: "From Play"
+  #vars:
+    #test: "From Play"
   #vars_files:
   #- course.yaml
   #vars_prompt:
