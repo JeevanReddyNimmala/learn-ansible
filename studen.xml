@@ -1,0 +1,20 @@
+<student>
+    <firstname>JeevanReddy</firstname>
+    <lastname>Nimmala</lastname> 
+    <dob>1998-12-12</dob> 
+    <gender>Male</gender>
+    <addresses>
+        <address type="Present">
+            <street>123 Main St</street>
+            <city>Hyderabad</city>
+            <state>Telangana</state>
+            <zip>500001</zip>
+        </address>
+        <address type="Permanent">
+            <street>456 Elm St</street>
+            <city>Hyderabad</city>
+            <state>Telangana</state>
+            <zip>500002</zip>
+        </address>
+    </addresses>    
+</student>

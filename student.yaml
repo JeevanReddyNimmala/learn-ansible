@@ -1,0 +1,36 @@
+- first_name: "JeevanReddy"
+  last_name: "nimmala"    
+  dob: "01-01-1989"
+  address:
+  - type: "home"
+    street: "123 Main St"
+    city: "Hyderabad"
+    state: "Telangana"
+    zip: "500001"
+  - type: "work"      
+    street: "456 Corporate Blvd" 
+    city: "Hyderabad"
+    state: "Telangana"
+    zip: "500001"
+  - Skills:      
+     Ansible
+     Python
+     Linux 
+- first_name: "JeevanReddy"
+  last_name: "nimmala"    
+  dob: "01-01-1989"
+  address:
+  - type: "home"
+    street: "123 Main St"
+    city: "Hyderabad"
+    state: "Telangana"
+    zip: "500001"
+  - type: "work"      
+    street: "456 Corporate Blvd" 
+    city: "Hyderabad"
+    state: "Telangana"
+    zip: "500001"
+  - Skills:      
+     Ansible
+     Python
+     Linux 
