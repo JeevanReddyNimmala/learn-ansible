@@ -1,0 +1,11 @@
+- name: demo on varaibles
+  hotsts: local
+  connection; local
+  vars:
+    cousre: "Ansible"
+    tariner: "Jeevan Reddy"
+    duration: "16 weeks"
+  tasks:
+  - name: print the vars
+    debug:
+      msg: "Hi, Iam learning {{cousre}} from {{tariner}} and the duration of the course is {{duration}}"
