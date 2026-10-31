@@ -1,0 +1,9 @@
+- name: variables from files
+  hosts: local
+  connection: local
+  vars_files:
+  - course.yaml
+  tasks:
+     - name: print vars
+       debug:
+        msg:" hi,iam learning {{course}} from {{trainer}} for {{duration}}"
