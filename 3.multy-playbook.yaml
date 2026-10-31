@@ -3,10 +3,10 @@
   connection: local
   tasks:
   - name: Play-1 and Task -1
-    ansibile.builtin.debug:
+    ansible.builtin.debug:
       msg: "Play-1 and Task-1"
   - name: Play-1 and Task -2
-    ansibile.builtin.debug:
+    ansible.builtin.debug:
       msg: "Play-1 and Task-2"  
 
 
@@ -16,8 +16,8 @@
   connection: local
   tasks:
   - name: Play-2 and Task -1
-    ansibile.builtin.debug:
+    ansible.builtin.debug:
       msg: "Play-2 and Task-1"
   - name: Play-2 and Task -2
-    ansibile.builtin.debug:
+    ansible.builtin.debug:
       msg: "Play-2 and Task-2"           
