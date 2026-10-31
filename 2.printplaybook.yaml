@@ -2,5 +2,5 @@
   hotsts: local
   connection: local
   tasks:
-    - name: print the message
+  - name: print the message
        ansible.builtin.debug:
