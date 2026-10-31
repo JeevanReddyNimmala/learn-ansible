@@ -3,4 +3,4 @@
   tasks:
   - name: print variables from Inventory
     debug:
-      msg: "The property is {{property}} from father and the property is {{property}} from his Mother"
+      msg: "hi,iam learning {{course}} from {{trainer}} for {{duration}}"
