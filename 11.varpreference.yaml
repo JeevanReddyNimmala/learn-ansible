@@ -1,0 +1,15 @@
+- name: var preference demo
+  hosts: local
+  connection: local
+  vars:
+    test: "From Play"
+  Vars_files:
+  - course.yaml
+  vars_prompt:
+  - name: test
+    prompt: from prompt
+    private: no
+  tasks:
+  - name: print the variable
+    debug:
+      msg: "The value is from {{test}}"
