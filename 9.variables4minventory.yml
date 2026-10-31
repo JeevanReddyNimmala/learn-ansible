@@ -1,4 +1,4 @@
-- name: varaiables from inventory
+- name: variables from inventory
   hosts: frontend
   tasks:
   - name: print variables from Inventory
