@@ -1,0 +1,7 @@
+- name: ping demo
+  hosts: localhost #targets ansible local machine
+  connection: local #it will not expect credentials to connect 
+  tasks:
+    - name: ping demo
+      ping:
+      
