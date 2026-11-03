@@ -9,5 +9,5 @@
   - name: print the vars
     debug:
       msg: |
-       "Hi, Iam learning {{course | upper}} from {{trainer | lower}} and the duration of the course is {{duration | title}}"
+       "Hi, Iam learning {{course | upper}} from {{trainer | lower}} and the duration of the course is {{duration}}"
         "Hi Student name is {{Pesrson_name | default('Shirisha') }} and the Student age is {{Person_age | default('25') }}"
