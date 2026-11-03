@@ -16,13 +16,13 @@
       trainer: Jeevan Reddy
       duration_in_months: 4.5
 
-    tasks: 
-    - name: print info type
-      debug:
-        msg: |
-          Course: {{course}} : {{course | type_debug }}
-          Trainer: {{trainer}} : {{trainer | type_debug }}
-          Duration: {{duration}} : {{duration | type_debug }}
-          Is Live: {{is_live}} : {{is_live | type_debug }}
-          Topics: {{topics}} : {{topics | type_debug }}
-          More Details: {{more details}} : {{more details | type_debug }}
+  tasks: 
+  - name: print info type
+    debug:
+      msg: |
+        Course: {{course}} : {{course | type_debug }}
+        Trainer: {{trainer}} : {{trainer | type_debug }}
+        Duration: {{duration}} : {{duration | type_debug }}
+        Is Live: {{is_live}} : {{is_live | type_debug }}
+        Topics: {{topics}} : {{topics | type_debug }}
+        More Details: {{more_details}} : {{more_details | type_debug }}
