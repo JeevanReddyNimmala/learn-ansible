@@ -12,9 +12,9 @@
       - Kubernetes
       - Jenkins
       - Git
-  more details:
-    trainner: Jeevan Reddy
-    duration_in_months: 4.5
+    more details:
+      trainer: Jeevan Reddy
+      duration_in_months: 4.5
 
     tasks: 
     - name: print info type
