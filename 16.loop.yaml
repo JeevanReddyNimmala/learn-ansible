@@ -4,7 +4,7 @@
   tasks:
     - name: loop demo
       debug:
-        msg: "{{item}}"
+        msg: "Am learning {{item}}"
       loop:
         - Ansible
         - Jenkins

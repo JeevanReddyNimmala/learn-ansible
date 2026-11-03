@@ -1,0 +1,15 @@
+- name: installing packages using loop
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    packages:
+      - nginx
+      - msql
+      - htop
+  tasks:
+    - name: install packages
+      package:
+        name:{{item}}
+        state: present
+      loop: packages
