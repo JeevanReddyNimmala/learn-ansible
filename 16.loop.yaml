@@ -1,0 +1,11 @@
+- name: Demo on loops
+  hosts: local
+  connection: local
+  tasks:
+    - name: loop demo
+      debug:
+        msg: "{{item}}"
+      loop:
+        - Ansible
+        - Jenkins
+        - Docker
