@@ -10,4 +10,10 @@
 
     - name: pritn the data
       debug:
-        msg: "The User id {{user_output}}"  
+        msg: "The User id {{user_output}}"
+
+    - name: create user
+      commaand: useradd roboshop
+      when: user_output.rc != 0
+      
+          
