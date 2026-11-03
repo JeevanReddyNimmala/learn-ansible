@@ -6,11 +6,11 @@
   - name: print OS name
     debug:
       msg: "The OS name is Redhat"
-    when: anisble_facts.os_family == "RedHat"  
+    when: anisble_facts[os_family] == "RedHat"  
 
   - name: print OS name
     debug:
       msg: "The OS name is Ubuntu"
-    when: anisble_facts.os_family == "Debian"    
+    when: anisble_facts[os_family] == "Debian"    
 
   
