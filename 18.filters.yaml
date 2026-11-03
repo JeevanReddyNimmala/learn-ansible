@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   vars:
-    topis: "Ansible,Jenkins,Docker,Kubernetes,AWS,Azure"
+    topis: "Ansible, Jenkins, Docker, Kubernetes, AWS, Azure"
   tasks:
     - name: print the name
       debug:
-        msg: "Hi ,iam learning {{topis | split(',')}}"
+        msg: "Hi ,iam learning {{topis | split(', ')}}"
