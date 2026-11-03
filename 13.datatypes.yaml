@@ -1,0 +1,28 @@
+- name: Course Information
+  hosts: local
+  connection: local
+  vars:
+    course: Devops with AI
+    trainer: Jeevan Reddy
+    duration: 160
+    is_live: true
+    topics:
+      - Ansible
+      - Docker
+      - Kubernetes
+      - Jenkins
+      - Git
+  more details:
+    trainner: Jeevan Reddy
+    duration_in_months: 4.5
+
+   tasks: 
+    - name: print info type
+      debug:
+        msg: |
+          Course: {{course}} : {{course | type_debug }}
+          Trainer: {{trainer}} : {{trainer | type_debug }}
+          Duration: {{duration}} : {{duration | type_debug }}
+          Is Live: {{is_live}} : {{is_live | type_debug }}
+          Topics: {{topics}} : {{topics | type_debug }}
+          More Details: {{more details}} : {{more details | type_debug }}
