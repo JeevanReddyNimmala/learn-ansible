@@ -13,7 +13,6 @@
         msg: "The User id {{user_output}}"
 
     - name: create user
-      commaand: useradd roboshop
+      command: useradd roboshop
       when: user_output.rc != 0
-      
-          
+
