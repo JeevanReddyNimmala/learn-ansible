@@ -5,7 +5,7 @@
   vars:
     packages:
       - nginx
-      - msql
+      - mysql
       - htop
   tasks:
     - name: install packages
