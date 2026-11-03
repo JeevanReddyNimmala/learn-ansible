@@ -3,14 +3,23 @@
   become: yes 
   connection: local
   tasks:
-  - name: print OS name
-    debug:
-      msg: "The OS name is Redhat"
-    when: ansible_facts['os_family'] == "RedHat"  
+ # - name: print OS name
+  #  debug:
+   #   msg: "The OS name is Redhat"
+    #when: ansible_facts['os_family'] == "RedHat"  
 
-  - name: print OS name
-    debug:
-      msg: "The OS name is Ubuntu"
-    when: ansible_facts['os_family'] == "Debian"    
-
+  #- name: print OS name
+   # debug:
+    #  msg: "The OS name is Ubuntu"
+    #when: ansible_facts['os_family'] == "Debian"    
+  - name: install nginx
+    ansible.builtin.yum:
+      name: nginx
+      state: present
+    when: ansible_facts['os_family'] == "RedHat" 
+   - name: install nginx
+    ansible.builtin.apt:
+      name: nginx
+      state: present
+    when: ansible_facts['os_family'] == "Debian" 
   
