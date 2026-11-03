@@ -13,14 +13,4 @@
       msg: "The OS name is Ubuntu"
     when: anisble_facts.os_family == "Debian"    
 
-- name: Install nginx  
-  dnf:
-    name: nginx
-    state: present
-  when: anisble_facts.os_family == "RedHat"
-
-- name: Install nginx  
-  apt:
-    name: nginx
-    state: present
-  when: anisble_facts.os_family == "Debian"   
+  
