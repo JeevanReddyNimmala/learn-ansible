@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    given_number:
+    given_number: 10
   tasks:
   - name: check even or odd
     debug:
