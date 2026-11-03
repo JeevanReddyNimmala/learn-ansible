@@ -8,5 +8,6 @@
 
   - name: print some information of facts
     debug:
-      msg:|
-      OS Family:{{ ansible_facts['all_ipv4_addresses'] }}
+      msg: |
+        OS Family:{{ ansible_facts['all_ipv4_addresses'] }}
+ 
