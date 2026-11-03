@@ -16,7 +16,7 @@
     trainner: Jeevan Reddy
     duration_in_months: 4.5
 
-   tasks: 
+    tasks: 
     - name: print info type
       debug:
         msg: |
