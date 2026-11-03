@@ -4,12 +4,12 @@
   become: yes
   vars:
     packages:
-      - nginx
-      - mysql
-      - htop
+      - {name:nginx state:absent}
+      - {name:mysql state:present}
+      - {name:htop state:present}
   tasks:
     - name: install packages
       package:
-        name: "{{item}}"
-        state: present
+        name: "{{item.name}}"
+        state: "{{item.state}}"
       loop: "{{ packages }}"
