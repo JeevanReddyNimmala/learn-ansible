@@ -2,12 +2,8 @@
   hosts: local
   connection: local
   vars:
-    course: "Ansible"
-    trainer: "Jeevan Reddy"
-    duration: "16 weeks"
-  tasks:
-  - name: print the vars
-    debug:
-      msg: |
-       "Hi, Iam learning {{course | upper}} from {{trainer | lower}} and the duration of the course is {{duration}}"
-        "Hi Student name is {{Pesrson_name | default('Shirisha') }} and the Student age is {{Person_age | default('25') }}"
+    topis: "Ansible, Jenkins, Docker, Kubernetes, AWS, Azure"
+    tasks:
+      - name: print the name
+        debug:
+          msg: "Hi ,iam learning {{topis | split(',')}}"
