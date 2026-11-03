@@ -3,7 +3,14 @@
   connection: local
   vars:
     topis: "Ansible , Jenkins , Docker , Kubernetes , AWS , Azure"
+    names:
+    - Jeevan
+    - Reddy 
+    - Nimmala 
   tasks:
-    - name: print the name
+    - name: convert string to list
       debug:
         msg: "Hi ,iam learning {{topis | split(', ')}}"
+    - name: convert list to string
+      debug:
+        msg: "Hi ,iam learning {{ names | join(' ')}}"
