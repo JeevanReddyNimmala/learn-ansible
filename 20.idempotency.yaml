@@ -1,0 +1,9 @@
+- name: create system user
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: create user roboshop
+      user:
+        name: roboshop
+        state: present
