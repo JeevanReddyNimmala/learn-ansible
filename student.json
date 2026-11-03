@@ -24,28 +24,3 @@
 
 }
 
-{
-    "first_name":"RamanaReddy",
-    "last_name":"Nimmala",
-    "dob":"01-01-1989",
-    "Address":[
-        {
-            "type":"Present",
-            "door_no":"123-456",
-            "street":"Arepally",
-            "City":"Karimnagar"
-        },
-        {
-            "type":"Permanent",
-            "door_no":"123-456",
-            "street":"Arepally",
-            "City":"Karimnagar"
-        }
-    ],
-    "skills":{
-        "OS":"Linux",
-        "Scripting":"Python",
-        "Configuration Management":"Ansible"
-    }
-
-}
