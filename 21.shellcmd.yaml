@@ -9,3 +9,11 @@
     - name: print the output
       debug:
         msg: "The output is {{ec2_user_ouput}}"
+
+    - name: get the files
+      shell: ls -l > /tmp/files.txt
+      register: file_output
+
+    - name: print the output
+      debug:
+        msg: "The output is {{file_output}}"
