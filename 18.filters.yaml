@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    topis: "Ansible, Jenkins, Docker, Kubernetes, AWS, Azure"
+    topis: "Ansible,Jenkins,Docker,Kubernetes,AWS,Azure"
     tasks:
       - name: print the name
         debug:
